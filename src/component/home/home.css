@@ -1,0 +1,48 @@
+
+  
+  @keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-1000%)}
+  }
+
+.card-titlee {
+  font-weight: 900;
+  font-family: sans-serif;
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+.card-texts {
+  font-weight: 600;
+  font-family: sans-serif;
+  justify-content: center;
+  display: flex;
+
+}
+.btn {
+  width: 85%;
+  margin-top: 2rem;
+}
+
+.card-group {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.cardi {
+  width: 30%;
+  height: 30%;
+  
+}
+.flexs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20;
+}
+.produu {
+  display: flex;
+  margin: 0 5rem 5rem 5rem;
+  gap: 3rem;
+  justify-content: center;
+}

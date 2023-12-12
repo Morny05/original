@@ -1,0 +1,8 @@
+.sidebar-title {
+    margin-bottom: 4px;
+    margin-top: 2rem;
+}
+.sidebar-label-container {
+    display: flex;
+    opacity: 0.8;
+}

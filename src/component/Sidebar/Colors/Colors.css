@@ -1,0 +1,10 @@
+.sidebar-title {
+    margin-bottom: 2px;
+    
+}
+.sidebar-label-container {
+    display: flex;
+    font-weight: 500;
+    margin-left: 10%;
+    margin-bottom: 3px;
+}

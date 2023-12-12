@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 //import { useDispatch } from 'react-redux';
+import './panier.css';
 
 function Panier (){
     const [id,setId]=useState('');

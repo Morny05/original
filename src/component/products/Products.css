@@ -1,0 +1,67 @@
+.card-group {
+    font-family: sans-serif;
+    display: flex;
+    margin: 50px 0;
+    margin-left: 8rem;
+    margin-top: 2rem;
+}
+.card-body {
+    margin: 15px;
+    margin-left: 9%;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.img {
+    width: 180px;
+    height: 180px;
+    margin-left: 4%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.card-title {
+    margin-left: 4%;
+    font-weight: bold;
+    margin-top: 4%;
+}
+.cat {
+    color: darkorange;
+    font-weight: 400;
+    margin: 5px;
+}
+.card-text {
+    margin-left: 4%;
+    margin-top: 0.5rem;
+}
+.btn {
+    margin-left: 4%;
+    margin-bottom: 1rem;
+}
+
+.Catego {
+    margin: -30rem 0px 2px 20rem;
+    padding-right: 9%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.recomanded-btns {
+    display: flex;
+    margin-left: 15rem;
+    justify-content: center;
+}
+.btns {
+    padding: 10px 20px;
+    margin-right: 5rem;
+    margin-top: 0.5rem;
+    background: transparent;
+    border: none;
+    border: 0.6px solid #ccc;
+    border-radius: 10px;
+    font-weight: 450;
+    cursor: pointer;
+}
+.contenu {
+    margin: 1rem 0 0 5rem;
+    width: auto;
+}

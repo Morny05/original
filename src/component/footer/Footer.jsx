@@ -3,29 +3,28 @@ import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai"
 import { BsFacebook } from "react-icons/bs"
 import { RiInstagramFill } from "react-icons/ri"
 import { Link } from "react-router-dom"
+import './Footer.css'
 
 export const Footer = () => {
   return (
     <>
-      <footer className='bg-dark'>
-        <div className='row'><br/>
-          <div className="container col-md-6 text-white">
+      <footer className='footer'>
+        <div className="containera text-white">
+        <div className='social'>
           <p>&copy; 2023 OriginalCloths. All rights reserved.</p>
-          <div className='social'>
-            <Link to='https://web.facebook.com/' target="_blank">
-              <BsFacebook className='icon'/>
+            <Link to='https://web.facebook.com/' target="_blank" >
+              <BsFacebook className="links" />
             </Link>
             <Link>
-              <RiInstagramFill className='icon' rel="noopener noreferrer"/>
+              <RiInstagramFill className="links"  rel="noopener noreferrer"/>
             </Link>
             <Link>
-              <AiFillTwitterCircle className='icon' rel="noopener noreferrer"/>
+              <AiFillTwitterCircle className="links"  rel="noopener noreferrer"/>
             </Link>
             <Link>
-              <AiFillLinkedin className='icon' rel="noopener noreferrer"/>
+              <AiFillLinkedin className="links"  rel="noopener noreferrer"/>
             </Link>
           </div><br/>
-          </div>
         </div>
       </footer>
     </>

@@ -1,5 +1,6 @@
-import React from 'react'
-import "./home.css"
+import React from 'react';
+import "../home/home.css";
+
 
 const Scroll = () => {
   return (
