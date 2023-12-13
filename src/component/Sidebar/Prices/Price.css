@@ -1,3 +1,6 @@
+.ml {
+    margin-right: 2rem;
+}
 .sidebar-title {
     margin-bottom: 4px;
     font-weight: normal;
@@ -10,7 +13,7 @@
 .sidebar-label-container {
     display: block;
     position: relative;
-        
+    font-weight: 500;
     margin-left: 10%;
     margin-bottom: 3px;
     cursor: pointer;

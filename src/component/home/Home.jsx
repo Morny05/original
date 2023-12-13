@@ -20,10 +20,11 @@ function Home(){
               <div className="container">
                 <h1 className="card-titlee ">New Season Arrivals</h1>
                 <h6 className="card-texts">CHECK OUT ALL THE TRENDS</h6><br/>
-                <Link to='/products'><button className='btn btn-outline-dark'>Shop Now</button></Link>
+                <Link to='/products'><button className='btn btn-dark btn-lg'>You want to check our products !!</button></Link>
               </div>
             </div>
         </div>
+        
         <Scroll/>
         <br/>
         <div className="flex flex-col text-center w-full ">
@@ -41,7 +42,7 @@ function Home(){
                 <Card.Title >{item.title}</Card.Title>
                 <Card.Text className='fw-normal'>{item.price}</Card.Text>
                   <Link to={`/products/${item.id}`} >
-                    <button className='btn btn-outline-success'>Details</button>
+                    <button className='btn btn-outline-success btn-sm'>Detail</button>
                   </Link>
               </Card>
             </div>

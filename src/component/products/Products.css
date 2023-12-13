@@ -39,29 +39,33 @@
 }
 
 .Catego {
-    margin: -30rem 0px 2px 20rem;
-    padding-right: 9%;
+    margin: -36rem 0px 2px 20rem;
+    padding-right: 0;
     font-size: 20px;
     font-weight: 600;
     font-family: sans-serif;
 }
 .recomanded-btns {
     display: flex;
-    margin-left: 15rem;
+    margin-left: 0;
     justify-content: center;
 }
 .btns {
     padding: 10px 20px;
-    margin-right: 5rem;
+    margin-right: 6px;
     margin-top: 0.5rem;
     background: transparent;
     border: none;
     border: 0.6px solid #ccc;
-    border-radius: 10px;
-    font-weight: 450;
+    border-radius: 5px;
+    color: #323232;
+    font-family: sans-serif;
     cursor: pointer;
 }
 .contenu {
     margin: 1rem 0 0 5rem;
     width: auto;
+}
+.reco {
+    margin-top: 2rem;
 }

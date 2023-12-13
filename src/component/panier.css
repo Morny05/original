@@ -1,3 +1,15 @@
 .container {
-    padding-top: 5%;
+    padding-top: 7%;
+}
+.text-center {
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: rgb(27, 153, 111);
+}
+.btn {
+    width: 20%;
+}
+.total-product {
+    margin-bottom: 3rem;
 }

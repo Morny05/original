@@ -13,13 +13,13 @@
   justify-content: center;
 }
 .card-texts {
-  font-weight: 600;
+  font-weight: 900;
   font-family: sans-serif;
   justify-content: center;
   display: flex;
 
 }
-.btn {
+.container .btn {
   width: 85%;
   margin-top: 2rem;
 }

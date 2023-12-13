@@ -1,6 +1,6 @@
 .fixed-top {
     margin-bottom: -5%;
-
+    justify-content: space-around;
 }
 .navbar-nav {
     margin: auto;

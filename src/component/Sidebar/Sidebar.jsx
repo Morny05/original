@@ -1,9 +1,10 @@
 import React from 'react';
 import shopping from './images/shopping.png';
 import './Sidebar.css'
-import Catetgory from './Categorys/Catetgory';
-import Price from './Price/Price';
-import Color from './Colors/Color';
+import Catetgory from './Categorys/Catetgory.jsx';
+import Price from './Prices/Price.jsx';
+import Color from './Colors/Color.jsx';
+
 
 const Sidebar = () => {
   return (
@@ -11,10 +12,10 @@ const Sidebar = () => {
         <section className='sidebar'>
         <div className="logo-container">
             <img src={shopping} className='shopping' width={'50px'} alt=''/>
-             <Catetgory/>
-             <Price/>
-             <Color/>
         </div>
+        <Catetgory/>      
+        <Price/>
+        <Color/>
         </section>  
     </>
     )

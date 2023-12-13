@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import Category from './Catego';
+import Category from './Recommended.jsx';
 import './Products.css';
-import Sidebar from '../Sidebar/Sidebar';
+import Sidebar from '../Sidebar/Sidebar.jsx';
 
-function Product(props){
+function Product(){
   const [productt, setProductt]=useState([]);
 
   useEffect(()=>{
@@ -29,7 +29,7 @@ function Product(props){
                     <span className='cat'>{item.category}</span></h6>    
                   <p className='card-text'>Price : {item.price} $</p>                  
                   <Link to={`/products/${item.id}`}>  
-                    <button className='btn btn-dark'>Add</button>  
+                    <button className='btn btn-outline-dark btn-sm'>Add</button>  
                   </Link>  
                 </div>    
               </div>           

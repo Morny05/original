@@ -13,16 +13,16 @@ function Panier (){
 
     return (
     <div className="container">
-       <div><br/><br/><br/>
+       <div>
         <h1 className='text-center'>Products Panier</h1>
             <table className='table is-hoverable'>
                 <thead>
                     <tr>
-                        <th>id</th>
-                        <th>name</th>
-                        <th>price</th>
-                        <th>total price</th>
-                        <th>action</th>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>TotalPrice</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,8 +32,10 @@ function Panier (){
                         <td>{price}</td>
                         <td>{totalPrice}</td>
                         <td>
-                            <button type='button' className='btn btn-outline-success btn-sm'>add</button> 
-                            <button type='button' className='btn btn-outline-success btn-sm'>rem</button>
+                            <span>                            
+                            <button type='button' className='btn btn-outline-danger'>rem</button>
+                            <button type='button' className='btn btn-outline-success'>add</button>
+                            </span>
                         </td>
                     </tr>
                 </tbody>
@@ -41,7 +43,7 @@ function Panier (){
        </div>
        <div className='total-product'>
             <h5>Total: </h5>
-            <button className='btn btn-success btn-sm'>CLEAR CART</button>
+            <button className='btn btn-success'>CLEAR CART</button>
        </div>
     </div>
   )
