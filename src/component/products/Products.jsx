@@ -7,12 +7,20 @@ import Recommended from './Recommended.jsx';
 
 function Product(){
   const [productt, setProductt]=useState([]);
+  const [searchQuery, setSearchQuery]=useState('')
 
   useEffect(()=>{
     axios.get("https://fakestoreapi.com/products")
       .then(response=>setProductt(response.data) 
     )
   },[]);
+
+  const updateFilteredProducts = () => {
+    const filtered = productt.filter((product) => 
+      product.title.toLowerCase().includes(searchQuery.toLocaleLowerCase())
+    );
+    return filtered;
+  }
 
   return(
     <>
@@ -22,13 +30,17 @@ function Product(){
         <form className="dflex" role="search">
           <input 
             className="forms" 
-            type="search" placeholder=" Enter your article ..."
-            aria-label="Search" />
+            type="search" 
+            placeholder=" Enter your article ..."
+            aria-label="Search" 
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            />
         </form>      
         <div className="row row-cols-1 row-cols-md-5 g-6">          
-          {productt.map((item) => {
+          {updateFilteredProducts().map((item) => {
             return (
-              <div className="card-group ">
+              <div key={item.id} className="card-group ">
                 <div className="card-body">   
                 <img src={item.image} className='img' alt={item.title}/>       
                   <h6 className='card-title'>{item.title} <br/>
