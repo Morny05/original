@@ -2,7 +2,7 @@ import React from 'react'
 import './Products.css'
 
 
-const Category = () => {
+const Recommended = () => {
 
   return (
     <>
@@ -21,4 +21,4 @@ const Category = () => {
   )
 }
 
-export default Category
+export default Recommended

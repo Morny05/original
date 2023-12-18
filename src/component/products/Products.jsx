@@ -1,24 +1,30 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import Category from './Recommended.jsx';
 import './Products.css';
 import Sidebar from '../Sidebar/Sidebar.jsx';
+import Recommended from './Recommended.jsx';
 
 function Product(){
   const [productt, setProductt]=useState([]);
 
   useEffect(()=>{
     axios.get("https://fakestoreapi.com/products")
-      .then(response=>setProductt(response.data)
+      .then(response=>setProductt(response.data) 
     )
   },[]);
 
   return(
     <>
       <Sidebar/>
-      <Category/>
+      <Recommended/>
       <div className="contenu">
+        <form className="dflex" role="search">
+          <input 
+            className="forms" 
+            type="search" placeholder=" Enter your article ..."
+            aria-label="Search" />
+        </form>      
         <div className="row row-cols-1 row-cols-md-5 g-6">          
           {productt.map((item) => {
             return (

@@ -1,5 +1,4 @@
 import React from "react";
-import { Footer } from "../../component/footer/Footer";
 
 
 export default function Login(){
@@ -34,7 +33,6 @@ export default function Login(){
         </div>
       
     </section>
-          <Footer/>
       </>
     )
 }

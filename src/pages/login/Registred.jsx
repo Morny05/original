@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import "./login.css";
-import { Footer } from '../../component/footer/Footer';
 //import account from "./images/account.jpg";
 
 function Registred() {
@@ -23,7 +22,7 @@ function Registred() {
             </div>
           </div><br/>
           
-            <form style={{width: "50%", margin: "top"}}>
+            <form >
               <fieldset>
                 <h3 className="mb-4 fw-bolder d-flex justify-content-center">Informations Personnelles</h3>
                 <div className="mb-3 ">
@@ -49,7 +48,6 @@ function Registred() {
           
         </div>
       </section>
-      <Footer/>
     </>
     )
 }
